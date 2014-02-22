@@ -1,11 +1,14 @@
-<div class="smurfy">
+<div class="smurfy span6 offset4 text-center">
+
+<h1 class="custom-h1"> Provide Booya Feedback! </h1> 
+
 	
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title %>
-		<%= f.input :subtitle %>
-		<%= f.input :message %>
+		<%= f.input :title, label: 'Workout category', placeholder:'e.g. Barre' %>
+		<%= f.input :subtitle, label: 'Workout partner', placeholder: 'ChaiseFitness' %>
+		<%= f.input :message, label: 'Comments?', placeholder: 'So much fun!' %>
 
-		<%= f.submit "Save" %>
+		<%= f.submit "Add My Feedback", :class => 'btn btn-info btn-large' %>
 	<% end %>
 
 </div>
